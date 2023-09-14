@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    input[type="email"] {
+        width: 365px;
+    }
+
+    input[type="text"] {
+        width: 200px;
+    }
+
+    /* label::after{
+        content: "*";
+        color: red;
+    } */
+    table {
+        /* border-collapse: collapse; */
+        /* border: 1px solid black; */
+        width: 100%;
+        border-spacing: 0;
+
+    }
+
+    td,
+    th {
+        text-align: center;
+        border: none;
+
+    }
+
+    .trshade {
+        background-color: rgb(204, 201, 201);
+
+    }
+
+    tr {
+        height: 35px;
+    }
+
+    h4 {
+        margin: auto;
+    }
+
+    .th1 {
+        padding: 0 10px;
+        text-align: left;
+        width: 150px;
+    }
+
+    .fa-solid {
+        color: rgb(186, 186, 16);
+        font-size: large;
+    }
+    textarea{
+        width: 100%;
+    }
+</style>
+
+<body>
+    <form>
+        <!-- <label for="first name">Name<span style="color: red;">*</span></label><br>
+        <div>
+        <input type="text" name="first name" id="first name" required value="">
+ 
+        <input type="text"name="last name" id="last name"required><br>
+        <span style="padding-right: 145px;font-size: small;">first</span>
+        <span style="padding-right: 145px;font-size: small;">last</span><br><br> -->
+
+        <label for="first name">Name<span style="color: red;">*</span></label><br>
+        <div style="display: flex;">
+            <div style="margin-right: 10px;"><input type="text" name="first name" id="first name" required value=""><br>
+                <span style="padding-right: 145px;font-size: small;">first</span></div>
+            <div><input type="text"name="last name" id="last name"required><br>
+                <span style="padding-right: 145px;font-size: small;">last</span></div><br>
+
+        </div>
+
+        
+
+        <label for="email">Email<span style="color: red;">*</span></label>
+        <input type="email" name="email" id="email"required><br><br>
+
+        <label>Your Experience<span style="color: red;">*</span></label><br><br>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br><br>
+
+
+        <div>overall, how would you rate you exprerience with us?</div><br><br>
+        <h4>How satisfied are you with<span style="color: red;">*</span></h4>
+
+        <table>
+            <td></td>
+            <td>very unsatisfied</td>
+            <td>unsatisfied</td>
+            <td>Neutral</td>
+            <td>Satisfied</td>
+            <td>very satisfied</td>
+            <tr class="trshade">
+                <td class="th1"><label for="purchase">purchase</label></td>
+                <td>
+                    <label for="pur_vus"></label>
+                    <input type="radio" name="pur" id="pur_vus" value="very unsatisfied">
+                </td>
+                <td>
+                    <label for="pur_us"></label>
+                    <input type="radio" name="pur" id="pur_us" value="unsatisfied">
+                </td>
+                <td>
+                    <label for="pur_Nu"></label>
+                    <input type="radio" name="pur" id="pur_nu" value="Neutral">
+                </td>
+                <td>
+                    <label for="pur_sat"></label>
+                    <input type="radio" name="pur" id="pur_sat" value="satisfied">
+                </td>
+                <td>
+                    <label for="pur_vsat"></label>
+                    <input type="radio" name="pur" id="pur_vsat" value="very satisfied">
+                </td>
+            </tr>
+            <br>
+
+            <tr>
+                <td class="th1"><label for="services">services</label></td>
+                <td>
+                    <label for="ser_vus"></label>
+                    <input type="radio" name="ser" id="ser_vus" value="very unsatisfied">
+                </td>
+                <td>
+                    <label for="ser_us"></label>
+                    <input type="radio" name="ser" id="ser_us" value="unsatisfied">
+                </td>
+                <td>
+                    <label for="ser_Nu"></label>
+                    <input type="radio" name="ser" id="ser_nu" value="neutral">
+                </td>
+                <td>
+                    <label for="ser_sat"></label>
+                    <input type="radio" name="ser" id="ser_sat" value="satisfied">
+                </td>
+                <td>
+                    <label for="ser_vsat"></label>
+                    <input type="radio" name="ser" id="ser_vsat" value="very satisfied">
+                </td>
+            </tr>
+            <tr class="trshade">
+                <td class="th1"><label for="Company overall">Company overall</label></td>
+                <td>
+                    <label for="com_vus"></label>
+                    <input type="radio" name="com" id="com_vus" value="very unsatisfied">
+                </td>
+                <td>
+                    <label for="com_us"></label>
+                    <input type="radio" name="com" id="com_us" value="unsatisfied">
+                </td>
+                <td>
+                    <label for="com_Nu"></label>
+                    <input type="radio" name="com" id="com_nu" value="neutral">
+                </td>
+                <td>
+                    <label for="com_sat"></label>
+                    <input type="radio" name="com" id="com_sat" value="satisfied">
+                </td>
+                <td>
+                    <label for="com_vsat"></label>
+                    <input type="radio" name="com" id="com_vsat" value="very satisfied">
+                </td>
+            </tr>
+        </table><br><br>
+
+        <h4>How likely are you to<span style="color: red;">*</span></h4>
+
+        <table>
+            <td></td>
+            <td>very unlikely</td>
+            <td>unlikely</td>
+            <td>Neutral</td>
+            <td>likely</td>
+            <td>very likely</td>
+            <tr class="trshade">
+                <td class="th1"><label for="buy">Buy from us again</label></td>
+                <td>
+                    <label for="pur_vus1"></label>
+                    <input type="radio" name="pur1" id="pur_vus1" value="very unlikely">
+                </td>
+                <td>
+                    <label for="pur_us1"></label>
+                    <input type="radio" name="pur1" id="pur_us1" value="unlikely">
+                </td>
+                <td>
+                    <label for="pur_Nu1"></label>
+                    <input type="radio" name="pur1" id="pur_nu1" value="neutral">
+                </td>
+                <td>
+                    <label for="pur_sat"></label>
+                    <input type="radio" name="pur1" id="pur_sat1" value="likely">
+                </td>
+                <td>
+                    <label for="pur_vsat1"></label>
+                    <input type="radio" name="pur1" id="pur_vsat1" value="very likely">
+                </td>
+            </tr>
+            <br>
+
+            <tr>
+                <td class="th1"><label for="Recommend our product to others">Recommend our product to others</label>
+                </td>
+                <td>
+                    <label for="ser_vus1"></label>
+                    <input type="radio" name="ser1" id="ser_vus1" value="very unlikely">
+                </td>
+                <td>
+                    <label for="ser_us1"></label>
+                    <input type="radio" name="ser1" id="ser_us1" value="unlikely">
+                </td>
+                <td>
+                    <label for="ser_Nu1"></label>
+                    <input type="radio" name="ser1" id="ser_nu1" value="neutral">
+                </td>
+                <td>
+                    <label for="ser_sat"></label>
+                    <input type="radio" name="ser1" id="ser_sat1" value="likely">
+                </td>
+                <td>
+                    <label for="ser_vsat"></label>
+                    <input type="radio" name="ser1" id="ser_vsat1" value="very likely">
+                </td>
+            </tr>
+            <tr class="trshade">
+                <td class="th1"><label>Recommend our company to others</label></td>
+                <td>
+                    <label for="Recommend "></label>
+                    <input type="radio" name="com1" id="com_vus1" value="very unlikely">
+                </td>
+                <td>
+                    <label for="com_us1"></label>
+                    <input type="radio" name="com1" id="com_us1" value="unlikely">
+                </td>
+                <td>
+                    <label for="com_Nu1"></label>
+                    <input type="radio" name="com1" id="com_nu1" value="neutral">
+                </td>
+                <td>
+                    <label for="com_sat1"></label>
+                    <input type="radio" name="com1" id="com_sat1" value="likely">
+                </td>
+                <td>
+                    <label for="com_vsat1"></label>
+                    <input type="radio" name="com1" id="com_vsat1" value="very likely">
+                </td>
+            </tr>
+        </table><br><br>
+    <h4>Additional comments or suggesttions</h4>
+    <textarea></textarea><br>
+    <input type="submit" value="submit">
+
+    </form>
+</body>
+
+</html>
